@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Editar <th:block th:text="Objecion"></th:block></title>
+</head>
+<body>
+    <h1>Editar <th:block th:text="Objecion"></th:block></h1>
+    <form th:action="@{/objecion/editar/{id}(id=objecion.id)}" th:object="objecion" method="post">
+        <input type="hidden" th:field="*{id}" />
+            <label th:for="id" th:text="id + ':'"></label>
+            <input type="text" th:field="*{__id__}" th:id="id" /><br />
+            <label th:for="fechaCreacion" th:text="fechaCreacion + ':'"></label>
+            <input type="text" th:field="*{__fechaCreacion__}" th:id="fechaCreacion" /><br />
+            <label th:for="periodoConstitucional" th:text="periodoConstitucional + ':'"></label>
+            <input type="text" th:field="*{__periodoConstitucional__}" th:id="periodoConstitucional" /><br />
+            <label th:for="periodoLegislativo" th:text="periodoLegislativo + ':'"></label>
+            <input type="text" th:field="*{__periodoLegislativo__}" th:id="periodoLegislativo" /><br />
+            <label th:for="numeroProyecto" th:text="numeroProyecto + ':'"></label>
+            <input type="text" th:field="*{__numeroProyecto__}" th:id="numeroProyecto" /><br />
+            <label th:for="titulo" th:text="titulo + ':'"></label>
+            <input type="text" th:field="*{__titulo__}" th:id="titulo" /><br />
+            <label th:for="prohija" th:text="prohija + ':'"></label>
+            <input type="text" th:field="*{__prohija__}" th:id="prohija" /><br />
+            <label th:for="fechaDeLaNota" th:text="fechaDeLaNota + ':'"></label>
+            <input type="text" th:field="*{__fechaDeLaNota__}" th:id="fechaDeLaNota" /><br />
+            <label th:for="alcance" th:text="alcance + ':'"></label>
+            <input type="text" th:field="*{__alcance__}" th:id="alcance" /><br />
+            <label th:for="motivo" th:text="motivo + ':'"></label>
+            <input type="text" th:field="*{__motivo__}" th:id="motivo" /><br />
+            <label th:for="informeDeGobierno" th:text="informeDeGobierno + ':'"></label>
+            <input type="text" th:field="*{__informeDeGobierno__}" th:id="informeDeGobierno" /><br />
+            <label th:for="informeDeTrabajo" th:text="informeDeTrabajo + ':'"></label>
+            <input type="text" th:field="*{__informeDeTrabajo__}" th:id="informeDeTrabajo" /><br />
+            <label th:for="segundoDebate" th:text="segundoDebate + ':'"></label>
+            <input type="text" th:field="*{__segundoDebate__}" th:id="segundoDebate" /><br />
+            <label th:for="tercerDebate" th:text="tercerDebate + ':'"></label>
+            <input type="text" th:field="*{__tercerDebate__}" th:id="tercerDebate" /><br />
+            <label th:for="insistencia" th:text="insistencia + ':'"></label>
+            <input type="text" th:field="*{__insistencia__}" th:id="insistencia" /><br />
+            <label th:for="pdfNroLey" th:text="pdfNroLey + ':'"></label>
+            <input type="text" th:field="*{__pdfNroLey__}" th:id="pdfNroLey" /><br />
+            <label th:for="publicado" th:text="publicado + ':'"></label>
+            <input type="text" th:field="*{__publicado__}" th:id="publicado" /><br />
+            <label th:for="gaceta" th:text="gaceta + ':'"></label>
+            <input type="text" th:field="*{__gaceta__}" th:id="gaceta" /><br />
+            <label th:for="comentario" th:text="comentario + ':'"></label>
+            <input type="text" th:field="*{__comentario__}" th:id="comentario" /><br />
+        <input type="submit" value="Guardar" />
+    </form>
+    <a th:href="@{/objecion}">Volver a la lista</a>
+</body>
+</html>

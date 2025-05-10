@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de <th:block th:text="Objecion + 's'"></th:block></title>
+</head>
+<body>
+    <h1>Lista de <th:block th:text="Objecion + 's'"></th:block></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                    <th><th:block th:text="id"></th:block></th>
+                    <th><th:block th:text="fechaCreacion"></th:block></th>
+                    <th><th:block th:text="periodoConstitucional"></th:block></th>
+                    <th><th:block th:text="periodoLegislativo"></th:block></th>
+                    <th><th:block th:text="numeroProyecto"></th:block></th>
+                    <th><th:block th:text="titulo"></th:block></th>
+                    <th><th:block th:text="prohija"></th:block></th>
+                    <th><th:block th:text="fechaDeLaNota"></th:block></th>
+                    <th><th:block th:text="alcance"></th:block></th>
+                    <th><th:block th:text="motivo"></th:block></th>
+                    <th><th:block th:text="informeDeGobierno"></th:block></th>
+                    <th><th:block th:text="informeDeTrabajo"></th:block></th>
+                    <th><th:block th:text="segundoDebate"></th:block></th>
+                    <th><th:block th:text="tercerDebate"></th:block></th>
+                    <th><th:block th:text="insistencia"></th:block></th>
+                    <th><th:block th:text="pdfNroLey"></th:block></th>
+                    <th><th:block th:text="publicado"></th:block></th>
+                    <th><th:block th:text="gaceta"></th:block></th>
+                    <th><th:block th:text="comentario"></th:block></th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="objecion : objecions">
+                <td><th:block th:text="objecion.id"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                    <td><th:block th:text="objecion[atributo.nombre]"></th:block></td>
+                <td>
+                    <a th:href="@{/objecion/{id}(id=objecion.id)}">Ver</a>
+                    <a th:href="@{/objecion/editar/{id}(id=objecion.id)}">Editar</a>
+                    <a th:href="@{/objecion/eliminar/{id}(id=objecion.id)}">Eliminar</a>
+                </td>
+            </tr>
+        </tbody >
+    </table>
+    <a th:href="@{/objecion/crear}">Crear nuevo <th:block th:text="Objecion"></th:block></a>
+</body>
+</html>

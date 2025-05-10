@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Proyecto</title>
+</head>
+<body>
+    <h1>Crear Proyecto</h1>
+    <form action="/proyecto/crear" method="post">
+            <label for="id">id:</label>
+            <input type="text" name="id" id="id" /><br />
+            <label for="clienteId">clienteId:</label>
+            <input type="text" name="clienteId" id="clienteId" /><br />
+            <label for="empleadoId">empleadoId:</label>
+            <input type="text" name="empleadoId" id="empleadoId" /><br />
+            <label for="fechaCreacion">fechaCreacion:</label>
+            <input type="text" name="fechaCreacion" id="fechaCreacion" /><br />
+            <label for="costo">costo:</label>
+            <input type="text" name="costo" id="costo" /><br />
+        <input type="submit" value="Crear" />
+    </form>
+    <a href="/proyecto">Volver a la lista</a>
+</body>
+</html>
