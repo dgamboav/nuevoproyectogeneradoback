@@ -1,0 +1,12 @@
+{
+  "id": 1,
+    "fechaInicio": null, 
+  "fechaFin": null, 
+  "tipoAuditoria": "valor actualizado", 
+  "auditorLiderId": 2, 
+  "objetivo": "valor actualizado", 
+  "alcance": "valor actualizado", 
+  "estado": "valor actualizado", 
+  "createdAt": null, 
+  "updatedAt": null
+}

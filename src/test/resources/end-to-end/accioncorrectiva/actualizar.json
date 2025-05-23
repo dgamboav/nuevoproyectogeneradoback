@@ -1,0 +1,11 @@
+{
+  "id": 1,
+    "descripcion": "valor actualizado", 
+  "fechaImplementacion": null, 
+  "fechaVerificacion": null, 
+  "estado": "valor actualizado", 
+  "responsableId": 2, 
+  "createdAt": null, 
+  "updatedAt": null, 
+  "noConformidadId": 2
+}

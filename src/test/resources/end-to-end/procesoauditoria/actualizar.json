@@ -1,0 +1,8 @@
+{
+  "id": 1,
+    "auditoriaId": 2, 
+  "procesoId": 2, 
+  "resultado": "valor actualizado", 
+  "createdAt": null, 
+  "updatedAt": null
+}

@@ -1,0 +1,13 @@
+{
+  "id": 1,
+    "descripcion": "valor actualizado", 
+  "causaRaiz": "valor actualizado", 
+  "clasificacion": "valor actualizado", 
+  "fechaDeteccion": null, 
+  "responsableId": 2, 
+  "estado": "valor actualizado", 
+  "createdAt": null, 
+  "updatedAt": null, 
+  "auditoriaId": 2, 
+  "procesoId": 2
+}
